@@ -1,8 +1,13 @@
-# Ignorar todo
-*
+# Local Netlify folder
+.netlify
 
-# Excepto este archivo
-!.gitignore
+# Node modules (si se usan en el futuro)
+node_modules/
 
-# README placeholder
-!README.md
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
