@@ -1,13 +1,27 @@
-# Local Netlify folder
-.netlify
+# Claude Code
+.claude/
 
-# Node modules (si se usan en el futuro)
+# Local Netlify folder
+.netlify/
+
+# Node modules
 node_modules/
 
 # OS files
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # IDE
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temp files
+*.tmp
+*.temp
