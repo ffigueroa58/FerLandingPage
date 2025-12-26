@@ -1,0 +1,6 @@
+# Robots.txt para ffigueroa-automatizacion.netlify.app
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ffigueroa-automatizacion.netlify.app/sitemap.xml

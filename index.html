@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="cyber-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando Figueroa | Automatizacion de Procesos & Arquitectura de Datos en Peru</title>
+    <meta name="description" content="Especialista en automatizacion de flujos completos con 26 anos de experiencia. Reduzco procesos de 8 horas a 5 minutos. Telefonica, Falabella, INDRA. Lima, Peru.">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="automatizacion de procesos, RPA Peru, optimizacion base de datos, Python, SQL Server, Oracle, web scraping, ETL, Power BI, consultoria TI Lima">
+    <meta name="author" content="Fernando Figueroa Reynoso">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <meta name="geo.region" content="PE-LIM">
+    <meta name="geo.placename" content="Lima, Peru">
+    <link rel="canonical" href="https://ffigueroa-automatizacion.netlify.app/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ffigueroa-automatizacion.netlify.app/">
+    <meta property="og:title" content="Fernando Figueroa | Automatizacion de Procesos Peru">
+    <meta property="og:description" content="Transformo procesos de 8 horas en 5 minutos. 26 anos automatizando operaciones en Telefonica, Falabella e INDRA. Consulta gratuita.">
+    <meta property="og:image" content="https://ffigueroa-automatizacion.netlify.app/assets/img/fernando-figueroa.png">
+    <meta property="og:locale" content="es_PE">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ffigueroa-automatizacion.netlify.app/">
+    <meta name="twitter:title" content="Fernando Figueroa | Automatizacion de Procesos Peru">
+    <meta name="twitter:description" content="Transformo procesos de 8 horas en 5 minutos. 26 anos automatizando operaciones en Telefonica, Falabella e INDRA.">
+    <meta name="twitter:image" content="https://ffigueroa-automatizacion.netlify.app/assets/img/fernando-figueroa.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Fernando Figueroa - Automatizacion de Procesos",
+        "description": "Especialista en automatizacion de flujos completos, optimizacion de bases de datos y arquitectura de procesos con 26 anos de experiencia.",
+        "url": "https://ffigueroa-automatizacion.netlify.app",
+        "telephone": "+51939922418",
+        "email": "ffigueroa58@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Lima",
+            "addressCountry": "PE"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -12.0464,
+            "longitude": -77.0428
+        },
+        "priceRange": "$$",
+        "openingHours": "Mo-Fr 09:00-18:00",
+        "sameAs": [
+            "https://www.linkedin.com/in/fernandofigueroareynoso"
+        ],
+        "founder": {
+            "@type": "Person",
+            "name": "Fernando Figueroa Reynoso",
+            "jobTitle": "Analista Programador Senior",
+            "knowsAbout": ["Python", "SQL Server", "Oracle", "RPA", "UiPath", "Power BI", "Web Scraping", "ETL"]
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Peru"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios de Automatizacion",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Automatizacion de Flujos Completos"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Web Scraping y Extraccion de Datos"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Optimizacion de Bases de Datos"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Dashboards y Reporteria Inteligente"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+
+    <!-- Theme System -->
+    <style>
+        :root {
+            --bg-primary: #030712;
+            --bg-secondary: #111827;
+            --bg-card: #1f2937;
+            --text-primary: #f9fafb;
+            --text-secondary: #9ca3af;
+            --accent-primary: #3b82f6;
+            --accent-secondary: #06b6d4;
+            --accent-glow: rgba(59, 130, 246, 0.3);
+        }
+
+        * {
+            transition: background-color 0.4s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+        }
+
+        /* TEMA 1: Cyber Dark - Azul tecnológico oscuro */
+        [data-theme="cyber-dark"] {
+            --bg-primary: #030712;
+            --bg-secondary: #0f172a;
+            --bg-card: #1e293b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent-primary: #3b82f6;
+            --accent-secondary: #06b6d4;
+            --accent-glow: rgba(59, 130, 246, 0.4);
+        }
+        [data-theme="cyber-dark"] body,
+        [data-theme="cyber-dark"] {
+            background: linear-gradient(180deg, #030712 0%, #0f172a 50%, #030712 100%);
+        }
+
+        /* TEMA 2: Midnight Pro - Negro elegante con acentos dorados */
+        [data-theme="midnight-gold"] {
+            --bg-primary: #09090b;
+            --bg-secondary: #18181b;
+            --bg-card: #27272a;
+            --text-primary: #fafafa;
+            --text-secondary: #a1a1aa;
+            --accent-primary: #eab308;
+            --accent-secondary: #fbbf24;
+            --accent-glow: rgba(234, 179, 8, 0.3);
+        }
+        [data-theme="midnight-gold"] body,
+        [data-theme="midnight-gold"] {
+            background: linear-gradient(180deg, #09090b 0%, #18181b 50%, #09090b 100%);
+        }
+
+        /* TEMA 3: Ocean Deep - Azul océano profundo */
+        [data-theme="ocean-deep"] {
+            --bg-primary: #0c1929;
+            --bg-secondary: #172554;
+            --bg-card: #1e3a5f;
+            --text-primary: #e0f2fe;
+            --text-secondary: #7dd3fc;
+            --accent-primary: #0ea5e9;
+            --accent-secondary: #38bdf8;
+            --accent-glow: rgba(14, 165, 233, 0.4);
+        }
+        [data-theme="ocean-deep"] body,
+        [data-theme="ocean-deep"] {
+            background: linear-gradient(180deg, #0c1929 0%, #172554 30%, #1e3a5f 70%, #0c1929 100%);
+        }
+
+        /* TEMA 4: Matrix Success - Verde éxito/dinero */
+        [data-theme="matrix-green"] {
+            --bg-primary: #022c22;
+            --bg-secondary: #064e3b;
+            --bg-card: #065f46;
+            --text-primary: #ecfdf5;
+            --text-secondary: #6ee7b7;
+            --accent-primary: #10b981;
+            --accent-secondary: #34d399;
+            --accent-glow: rgba(16, 185, 129, 0.4);
+        }
+        [data-theme="matrix-green"] body,
+        [data-theme="matrix-green"] {
+            background: linear-gradient(180deg, #022c22 0%, #064e3b 50%, #022c22 100%);
+        }
+
+        /* TEMA 5: Clean Light - Profesional claro */
+        [data-theme="clean-light"] {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-card: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --accent-primary: #2563eb;
+            --accent-secondary: #3b82f6;
+            --accent-glow: rgba(37, 99, 235, 0.2);
+        }
+        [data-theme="clean-light"] body,
+        [data-theme="clean-light"] {
+            background: linear-gradient(180deg, #ffffff 0%, #f8fafc 50%, #ffffff 100%);
+        }
+        [data-theme="clean-light"] .card-dark {
+            background: #ffffff !important;
+            border-color: #e2e8f0 !important;
+        }
+        [data-theme="clean-light"] nav {
+            background: rgba(255,255,255,0.9) !important;
+            border-color: #e2e8f0 !important;
+        }
+
+        /* Estilos base */
+        .bg-theme-primary { background-color: var(--bg-primary); }
+        .bg-theme-secondary { background-color: var(--bg-secondary); }
+        .bg-theme-card { background-color: var(--bg-card); }
+        .text-theme-primary { color: var(--text-primary); }
+        .text-theme-secondary { color: var(--text-secondary); }
+        .text-accent { color: var(--accent-primary); }
+        .text-accent-secondary { color: var(--accent-secondary); }
+        .bg-accent { background-color: var(--accent-primary); }
+        .border-accent { border-color: var(--accent-primary); }
+        .glow-accent { box-shadow: 0 0 30px var(--accent-glow); }
+
+        /* Gradiente de texto */
+        .gradient-text {
+            background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Botón primario */
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px var(--accent-glow);
+        }
+
+        /* Cards */
+        .card-dark {
+            background: var(--bg-card);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-primary); }
+        ::-webkit-scrollbar-thumb { background: var(--accent-primary); border-radius: 4px; }
+
+        /* Smooth scroll */
+        html { scroll-behavior: smooth; }
+
+        /* Selection */
+        ::selection {
+            background: var(--accent-primary);
+            color: white;
+        }
+    </style>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+
+    <!-- Particles Background -->
+    <div id="tsparticles" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;"></div>
+
+    <!-- Theme Selector - Floating Button -->
+    <div class="fixed top-24 left-4 z-50">
+        <button id="theme-toggle" class="p-3 rounded-xl shadow-lg transition-all hover:scale-110 glow-accent" style="background: var(--bg-card); border: 1px solid var(--accent-primary);">
+            <svg class="w-5 h-5" style="color: var(--accent-primary);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Animation Selector - Floating Button -->
+    <div class="fixed top-40 left-4 z-50">
+        <button id="animation-toggle" class="p-3 rounded-xl shadow-lg transition-all hover:scale-110 glow-accent" style="background: var(--bg-card); border: 1px solid var(--accent-primary);">
+            <svg class="w-5 h-5" style="color: var(--accent-primary);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Animation Panel -->
+    <div id="animation-panel" class="fixed top-40 left-4 z-50 opacity-0 pointer-events-none transition-all duration-300 transform -translate-x-4">
+        <div class="p-5 rounded-2xl shadow-2xl w-72" style="background: var(--bg-card); border: 1px solid rgba(255,255,255,0.1);">
+            <div class="flex items-center justify-between mb-5">
+                <span class="font-semibold" style="color: var(--text-primary);">Elegir Animacion</span>
+                <button id="close-animation-panel" class="p-1.5 rounded-lg transition-colors hover:bg-white/10">
+                    <svg class="w-5 h-5" style="color: var(--text-secondary);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2">
+                <!-- Animacion 1: Red Neuronal -->
+                <button onclick="setAnimation('neural-network')" class="animation-option p-3 rounded-xl flex flex-col items-center gap-2 transition-all hover:scale-[1.02]" data-animation-id="neural-network" style="background: rgba(255,255,255,0.05); border: 2px solid transparent;">
+                    <div class="text-2xl">🧠</div>
+                    <div class="text-center">
+                        <div class="text-white font-medium text-xs">Red Neuronal</div>
+                        <div class="text-gray-400 text-[10px]">Conexiones IA</div>
+                    </div>
+                </button>
+
+                <!-- Animacion 2: Burbujas -->
+                <button onclick="setAnimation('floating-bubbles')" class="animation-option p-3 rounded-xl flex flex-col items-center gap-2 transition-all hover:scale-[1.02]" data-animation-id="floating-bubbles" style="background: rgba(255,255,255,0.05); border: 2px solid transparent;">
+                    <div class="text-2xl">🫧</div>
+                    <div class="text-center">
+                        <div class="text-white font-medium text-xs">Burbujas</div>
+                        <div class="text-gray-400 text-[10px]">Esferas flotantes</div>
+                    </div>
+                </button>
+
+                <!-- Animacion 3: Estrellas -->
+                <button onclick="setAnimation('starfield')" class="animation-option p-3 rounded-xl flex flex-col items-center gap-2 transition-all hover:scale-[1.02]" data-animation-id="starfield" style="background: rgba(255,255,255,0.05); border: 2px solid transparent;">
+                    <div class="text-2xl">✨</div>
+                    <div class="text-center">
+                        <div class="text-white font-medium text-xs">Estrellas</div>
+                        <div class="text-gray-400 text-[10px]">Campo estelar</div>
+                    </div>
+                </button>
+
+                <!-- Animacion 4: Matrix -->
+                <button onclick="setAnimation('matrix-rain')" class="animation-option p-3 rounded-xl flex flex-col items-center gap-2 transition-all hover:scale-[1.02]" data-animation-id="matrix-rain" style="background: rgba(255,255,255,0.05); border: 2px solid transparent;">
+                    <div class="text-2xl">💻</div>
+                    <div class="text-center">
+                        <div class="text-white font-medium text-xs">Matrix</div>
+                        <div class="text-gray-400 text-[10px]">Lluvia de codigo</div>
+                    </div>
+                </button>
+
+                <!-- Animacion 5: Ondas -->
+                <button onclick="setAnimation('particles-wave')" class="animation-option p-3 rounded-xl flex flex-col items-center gap-2 transition-all hover:scale-[1.02]" data-animation-id="particles-wave" style="background: rgba(255,255,255,0.05); border: 2px solid transparent;">
+                    <div class="text-2xl">🌊</div>
+                    <div class="text-center">
+                        <div class="text-white font-medium text-xs">Ondas</div>
+                        <div class="text-gray-400 text-[10px]">Movimiento fluido</div>
+                    </div>
+                </button>
+
+                <!-- Animacion 6: Nieve -->
+                <button onclick="setAnimation('snow')" class="animation-option p-3 rounded-xl flex flex-col items-center gap-2 transition-all hover:scale-[1.02]" data-animation-id="snow" style="background: rgba(255,255,255,0.05); border: 2px solid transparent;">
+                    <div class="text-2xl">❄️</div>
+                    <div class="text-center">
+                        <div class="text-white font-medium text-xs">Nieve</div>
+                        <div class="text-gray-400 text-[10px]">Particulas cayendo</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-white/10 text-center">
+                <p class="text-xs" style="color: var(--text-secondary);">Presiona "A" para abrir/cerrar</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Theme Panel -->
+    <div id="theme-panel" class="fixed top-24 left-4 z-50 opacity-0 pointer-events-none transition-all duration-300 transform -translate-x-4">
+        <div class="p-5 rounded-2xl shadow-2xl w-72" style="background: var(--bg-card); border: 1px solid rgba(255,255,255,0.1);">
+            <div class="flex items-center justify-between mb-5">
+                <span class="font-semibold" style="color: var(--text-primary);">Elegir Estilo Visual</span>
+                <button id="close-theme-panel" class="p-1.5 rounded-lg transition-colors hover:bg-white/10">
+                    <svg class="w-5 h-5" style="color: var(--text-secondary);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="space-y-3">
+                <!-- Tema 1: Cyber Dark -->
+                <button onclick="setTheme('cyber-dark')" class="theme-option w-full p-3 rounded-xl flex items-center gap-3 transition-all hover:scale-[1.02]" data-theme-id="cyber-dark" style="background: linear-gradient(135deg, #030712 0%, #0f172a 100%); border: 2px solid transparent;">
+                    <div class="flex gap-1">
+                        <div class="w-5 h-5 rounded-full bg-blue-500"></div>
+                        <div class="w-5 h-5 rounded-full bg-cyan-400"></div>
+                    </div>
+                    <div class="text-left">
+                        <div class="text-white font-medium text-sm">Cyber Dark</div>
+                        <div class="text-gray-400 text-xs">Tecnológico, moderno</div>
+                    </div>
+                </button>
+
+                <!-- Tema 2: Midnight Gold -->
+                <button onclick="setTheme('midnight-gold')" class="theme-option w-full p-3 rounded-xl flex items-center gap-3 transition-all hover:scale-[1.02]" data-theme-id="midnight-gold" style="background: linear-gradient(135deg, #09090b 0%, #18181b 100%); border: 2px solid transparent;">
+                    <div class="flex gap-1">
+                        <div class="w-5 h-5 rounded-full bg-yellow-500"></div>
+                        <div class="w-5 h-5 rounded-full bg-yellow-300"></div>
+                    </div>
+                    <div class="text-left">
+                        <div class="text-white font-medium text-sm">Midnight Gold</div>
+                        <div class="text-gray-400 text-xs">Elegante, premium</div>
+                    </div>
+                </button>
+
+                <!-- Tema 3: Ocean Deep -->
+                <button onclick="setTheme('ocean-deep')" class="theme-option w-full p-3 rounded-xl flex items-center gap-3 transition-all hover:scale-[1.02]" data-theme-id="ocean-deep" style="background: linear-gradient(135deg, #0c1929 0%, #172554 100%); border: 2px solid transparent;">
+                    <div class="flex gap-1">
+                        <div class="w-5 h-5 rounded-full bg-sky-500"></div>
+                        <div class="w-5 h-5 rounded-full bg-sky-300"></div>
+                    </div>
+                    <div class="text-left">
+                        <div class="text-white font-medium text-sm">Ocean Deep</div>
+                        <div class="text-gray-400 text-xs">Profundo, confiable</div>
+                    </div>
+                </button>
+
+                <!-- Tema 4: Matrix Green -->
+                <button onclick="setTheme('matrix-green')" class="theme-option w-full p-3 rounded-xl flex items-center gap-3 transition-all hover:scale-[1.02]" data-theme-id="matrix-green" style="background: linear-gradient(135deg, #022c22 0%, #064e3b 100%); border: 2px solid transparent;">
+                    <div class="flex gap-1">
+                        <div class="w-5 h-5 rounded-full bg-emerald-500"></div>
+                        <div class="w-5 h-5 rounded-full bg-emerald-300"></div>
+                    </div>
+                    <div class="text-left">
+                        <div class="text-white font-medium text-sm">Matrix Green</div>
+                        <div class="text-gray-400 text-xs">Éxito, crecimiento</div>
+                    </div>
+                </button>
+
+                <!-- Tema 5: Clean Light -->
+                <button onclick="setTheme('clean-light')" class="theme-option w-full p-3 rounded-xl flex items-center gap-3 transition-all hover:scale-[1.02]" data-theme-id="clean-light" style="background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%); border: 2px solid #e2e8f0;">
+                    <div class="flex gap-1">
+                        <div class="w-5 h-5 rounded-full bg-blue-600"></div>
+                        <div class="w-5 h-5 rounded-full bg-blue-400"></div>
+                    </div>
+                    <div class="text-left">
+                        <div class="text-gray-900 font-medium text-sm">Clean Light</div>
+                        <div class="text-gray-500 text-xs">Claro, profesional</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-white/10 text-center">
+                <p class="text-xs" style="color: var(--text-secondary);">Se guarda automáticamente</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-40 backdrop-blur-md border-b" style="background: rgba(3, 7, 18, 0.8); border-color: rgba(255,255,255,0.05);">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="text-xl font-bold text-accent">FF</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#servicios" class="text-theme-secondary hover:text-accent transition-colors">Servicios</a>
+                    <a href="#resultados" class="text-theme-secondary hover:text-accent transition-colors">Resultados</a>
+                    <a href="#casos" class="text-theme-secondary hover:text-accent transition-colors">Casos de Éxito</a>
+                    <a href="#sobre-mi" class="text-theme-secondary hover:text-accent transition-colors">Sobre Mí</a>
+                </div>
+                <a href="https://wa.me/51939922418?text=Hola%20Fernando,%20quiero%20agendar%20una%20consulta%20gratuita%20para%20evaluar%20un%20proceso%20en%20mi%20empresa."
+                   target="_blank"
+                   class="btn-primary px-4 py-2 rounded-lg font-medium">
+                    Consulta Gratis
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-16 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-block px-4 py-2 rounded-full mb-6 border" style="background: var(--accent-glow); border-color: var(--accent-primary);">
+                <span class="text-sm font-medium text-accent-secondary">+26 anos transformando operaciones empresariales</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-theme-primary">
+                ¿Tu equipo pierde horas en<br>
+                <span class="gradient-text">
+                    procesos que deberian tomar minutos?
+                </span>
+            </h1>
+
+            <p class="text-xl mb-8 max-w-2xl mx-auto text-theme-secondary">
+                Convierto tareas que consumen <span class="font-semibold text-accent-secondary">8 horas en procesos de 5 minutos</span>.
+                Automatizacion inteligente que libera a tu equipo para lo que realmente importa.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/51939922418?text=Hola%20Fernando,%20quiero%20agendar%20una%20consulta%20gratuita%20para%20evaluar%20un%20proceso%20en%20mi%20empresa."
+                   target="_blank"
+                   class="btn-primary px-8 py-4 rounded-xl font-semibold text-lg flex items-center justify-center gap-2">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Agenda tu diagnostico gratuito
+                </a>
+                <a href="#resultados"
+                   class="border-2 px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:bg-white/5 text-theme-primary"
+                   style="border-color: var(--accent-primary);">
+                    Ver resultados reales
+                </a>
+            </div>
+
+            <p class="text-sm mt-4 text-theme-secondary opacity-70">
+                Respuesta en menos de 24 horas
+            </p>
+
+            <!-- Trust badges -->
+            <div class="mt-12 pt-8 border-t" style="border-color: rgba(255,255,255,0.1);">
+                <p class="text-sm mb-4 text-theme-secondary">Empresas que ya optimizaron sus procesos</p>
+                <div class="flex flex-wrap justify-center items-center gap-8 opacity-70">
+                    <span class="text-lg font-semibold text-theme-primary">INDRA</span>
+                    <span class="text-lg font-semibold text-theme-primary">Telefonica</span>
+                    <span class="text-lg font-semibold text-theme-primary">Falabella</span>
+                    <span class="text-lg font-semibold text-theme-primary">CONTATECH</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="card-dark p-8 rounded-2xl" style="border-left: 4px solid #ef4444;">
+                    <div class="text-red-400 text-sm font-semibold mb-4 uppercase tracking-wider">El Problema</div>
+                    <h2 class="text-2xl font-bold mb-4 text-theme-primary">¿Tu equipo pierde horas en procesos manuales?</h2>
+                    <ul class="space-y-3 text-theme-secondary">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-red-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                            Reportes que toman días en generarse
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-red-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                            Errores humanos en tareas repetitivas
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-red-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                            Consultas a BD que demoran horas
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-red-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                            Personal valioso atrapado en tareas operativas
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-dark p-8 rounded-2xl" style="border-left: 4px solid var(--accent-primary);">
+                    <div class="text-sm font-semibold mb-4 uppercase tracking-wider text-accent">La Solución</div>
+                    <h2 class="text-2xl font-bold mb-4 text-theme-primary">Automatización inteligente de flujos completos</h2>
+                    <ul class="space-y-3 text-theme-secondary">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            Procesos que tomaban horas ahora toman minutos
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            Arquitectura optimizada que ahorra recursos
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            Soluciones escalables que crecen contigo
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            Libera a tu equipo para tareas estratégicas
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="resultados" class="py-20 px-4" style="background: var(--bg-secondary);">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-theme-primary">Resultados que hablan por si solos</h2>
+                <p class="text-lg text-theme-secondary">Metricas reales de proyectos implementados en empresas como Telefonica, Falabella e INDRA</p>
+            </div>
+
+            <!-- Antes/Después Visual -->
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- ANTES -->
+                <div class="card-dark p-6 rounded-2xl" style="border: 2px solid #ef4444; border-left-width: 4px;">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center">
+                            <svg class="w-5 h-5 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                        </div>
+                        <span class="text-red-400 font-bold text-lg">ANTES</span>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-theme-secondary">
+                            <span class="text-red-400 font-mono text-sm">8 hrs</span>
+                            <span>Consultas criticas a base de datos</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-theme-secondary">
+                            <span class="text-red-400 font-mono text-sm">48 hrs</span>
+                            <span>Generacion de reportes y tickets</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-theme-secondary">
+                            <span class="text-red-400 font-mono text-sm">Manual</span>
+                            <span>Monitoreo de SUNAT y SUNAFIL</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-theme-secondary">
+                            <span class="text-red-400 font-mono text-sm">4 FTEs</span>
+                            <span>Personal en tareas repetitivas</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- DESPUÉS -->
+                <div class="card-dark p-6 rounded-2xl" style="border: 2px solid var(--accent-primary); border-left-width: 4px;">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background: var(--accent-glow);">
+                            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        </div>
+                        <span class="text-accent font-bold text-lg">DESPUES</span>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-theme-secondary">
+                            <span class="text-accent font-mono text-sm">5 min</span>
+                            <span>Mismas consultas, 96% mas rapido</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-theme-secondary">
+                            <span class="text-accent font-mono text-sm">30 min</span>
+                            <span>Reportes automaticos, 94% menos tiempo</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-theme-secondary">
+                            <span class="text-accent font-mono text-sm">24/7</span>
+                            <span>Monitoreo automatico con alertas</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-theme-secondary">
+                            <span class="text-accent font-mono text-sm">0 FTEs</span>
+                            <span>Personal libre para tareas estrategicas</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Métricas en números -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="card-dark p-6 rounded-2xl text-center">
+                    <div class="text-4xl sm:text-5xl font-bold mb-2 gradient-text">96%</div>
+                    <div class="text-sm text-theme-secondary">Reduccion de tiempo</div>
+                    <div class="text-xs text-theme-secondary opacity-60 mt-1">30 procesos criticos optimizados</div>
+                </div>
+
+                <div class="card-dark p-6 rounded-2xl text-center">
+                    <div class="text-4xl sm:text-5xl font-bold mb-2 gradient-text">9.5M</div>
+                    <div class="text-sm text-theme-secondary">Facturas/mes</div>
+                    <div class="text-xs text-theme-secondary opacity-60 mt-1">Telefonica del Peru</div>
+                </div>
+
+                <div class="card-dark p-6 rounded-2xl text-center">
+                    <div class="text-4xl sm:text-5xl font-bold mb-2 gradient-text">92%</div>
+                    <div class="text-sm text-theme-secondary">Menos errores</div>
+                    <div class="text-xs text-theme-secondary opacity-60 mt-1">+15% satisfaccion cliente</div>
+                </div>
+
+                <div class="card-dark p-6 rounded-2xl text-center">
+                    <div class="text-4xl sm:text-5xl font-bold mb-2 gradient-text">99.8%</div>
+                    <div class="text-sm text-theme-secondary">Disponibilidad</div>
+                    <div class="text-xs text-theme-secondary opacity-60 mt-1">Sistemas core de seguros</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-theme-primary">¿Que problema quieres resolver?</h2>
+                <p class="text-lg text-theme-secondary">Cada solucion esta disenada para darte resultados medibles</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Service 1 -->
+                <div class="card-dark p-8 rounded-2xl transition-all hover:scale-[1.02] hover:glow-accent">
+                    <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6" style="background: var(--accent-glow);">
+                        <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-theme-primary">"Mi equipo pasa horas en tareas repetitivas"</h3>
+                    <p class="mb-4 text-accent-secondary font-medium">Tu equipo deja de copiar datos entre sistemas y se enfoca en lo estrategico.</p>
+                    <ul class="text-sm space-y-2 text-theme-secondary">
+                        <li class="flex items-center gap-2"><span class="text-green-400">→</span> Facturacion que corria en 8 hrs ahora toma 5 min</li>
+                        <li class="flex items-center gap-2"><span class="text-green-400">→</span> Cero errores de digitacion manual</li>
+                        <li class="flex items-center gap-2"><span class="text-green-400">→</span> Procesos que trabajan 24/7 sin supervision</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="card-dark p-8 rounded-2xl transition-all hover:scale-[1.02] hover:glow-accent">
+                    <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6" style="background: var(--accent-glow);">
+                        <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-theme-primary">"Necesito datos que estan en otras webs"</h3>
+                    <p class="mb-4 text-accent-secondary font-medium">Datos de SUNAT, SUNAFIL o tu competencia en tu dashboard cada manana.</p>
+                    <ul class="text-sm space-y-2 text-theme-secondary">
+                        <li class="flex items-center gap-2"><span class="text-green-400">→</span> Monitoreo tributario automatico 24/7</li>
+                        <li class="flex items-center gap-2"><span class="text-green-400">→</span> Alertas instantaneas de cambios importantes</li>
+                        <li class="flex items-center gap-2"><span class="text-green-400">→</span> Informacion consolidada sin copiar y pegar</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="card-dark p-8 rounded-2xl transition-all hover:scale-[1.02] hover:glow-accent">
+                    <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6" style="background: var(--accent-glow);">
+                        <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-theme-primary">"Mis consultas a la BD tardan demasiado"</h3>
+                    <p class="mb-4 text-accent-secondary font-medium">Reportes que tardaban horas ahora se generan en segundos.</p>
+                    <ul class="text-sm space-y-2 text-theme-secondary">
+                        <li class="flex items-center gap-2"><span class="text-green-400">→</span> Queries optimizados para alto volumen</li>
+                        <li class="flex items-center gap-2"><span class="text-green-400">→</span> Base de datos que no se traba ni en cierres</li>
+                        <li class="flex items-center gap-2"><span class="text-green-400">→</span> Oracle, SQL Server, MySQL - todos</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="card-dark p-8 rounded-2xl transition-all hover:scale-[1.02] hover:glow-accent">
+                    <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6" style="background: var(--accent-glow);">
+                        <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-theme-primary">"Paso dias armando reportes manualmente"</h3>
+                    <p class="mb-4 text-accent-secondary font-medium">Reportes listos en tu correo cada lunes a las 7am, sin mover un dedo.</p>
+                    <ul class="text-sm space-y-2 text-theme-secondary">
+                        <li class="flex items-center gap-2"><span class="text-green-400">→</span> Dashboards que se actualizan solos</li>
+                        <li class="flex items-center gap-2"><span class="text-green-400">→</span> KPIs en tiempo real para tomar decisiones</li>
+                        <li class="flex items-center gap-2"><span class="text-green-400">→</span> Alertas cuando algo sale de lo normal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Cases Section -->
+    <section id="casos" class="py-20 px-4" style="background: var(--bg-secondary);">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-theme-primary">Casos de Exito Documentados</h2>
+                <p class="text-lg text-theme-secondary">Proyectos reales con resultados medibles y verificables</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Case 1: Telefónica Facturación -->
+                <div class="card-dark p-8 rounded-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 px-3 py-1 text-xs font-medium rounded-bl-lg" style="background: var(--accent-primary);">
+                        5+ años en produccion
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-xl flex items-center justify-center text-white font-bold" style="background: linear-gradient(135deg, #1e3a5f 0%, #0ea5e9 100%);">T</div>
+                        <div>
+                            <div class="text-sm font-semibold text-accent">Telefonica del Peru (INDRA)</div>
+                            <div class="text-xs text-theme-secondary">Cliente: 9.5M clientes</div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-theme-primary">Automatizacion del Ciclo de Facturacion</h3>
+                    <p class="text-sm mb-4 text-theme-secondary">Sistema end-to-end con 100+ controles automatizados para deteccion de incidencias, generacion de tickets y dashboards estadisticos.</p>
+
+                    <!-- Antes/Después mini -->
+                    <div class="grid grid-cols-2 gap-3 mb-4 p-3 rounded-lg" style="background: rgba(0,0,0,0.2);">
+                        <div class="text-center">
+                            <div class="text-xs text-red-400 mb-1">ANTES</div>
+                            <div class="text-lg font-bold text-red-400">Dias</div>
+                            <div class="text-xs text-theme-secondary">Ciclo manual</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-xs text-accent mb-1">DESPUES</div>
+                            <div class="text-lg font-bold text-accent">Horas</div>
+                            <div class="text-xs text-theme-secondary">75% mas rapido</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2 pt-4 border-t border-white/10">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-theme-secondary">Precision mejorada:</span>
+                            <span class="font-semibold text-accent-secondary">95%</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-theme-secondary">Personal liberado:</span>
+                            <span class="font-semibold text-accent-secondary">4 FTEs</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-theme-secondary">Ahorro estimado/año:</span>
+                            <span class="font-semibold text-green-400">~$120K USD</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-xs text-theme-secondary opacity-70">
+                        Tech: Python, SQL Server, ETL, Power BI
+                    </div>
+                </div>
+
+                <!-- Case 2: Telefónica Recibos -->
+                <div class="card-dark p-8 rounded-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 px-3 py-1 text-xs font-medium rounded-bl-lg" style="background: var(--accent-primary);">
+                        En produccion
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-xl flex items-center justify-center text-white font-bold" style="background: linear-gradient(135deg, #1e3a5f 0%, #0ea5e9 100%);">T</div>
+                        <div>
+                            <div class="text-sm font-semibold text-accent">Telefonica del Peru (INDRA)</div>
+                            <div class="text-xs text-theme-secondary">Sistema critico de recibos</div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-theme-primary">Distribucion Inteligente de Recibos</h3>
+                    <p class="text-sm mb-4 text-theme-secondary">Automatizacion de procesamiento masivo con Python y SQL Server, integracion a sistemas de impresion y monitoreo en tiempo real.</p>
+
+                    <!-- Antes/Después mini -->
+                    <div class="grid grid-cols-2 gap-3 mb-4 p-3 rounded-lg" style="background: rgba(0,0,0,0.2);">
+                        <div class="text-center">
+                            <div class="text-xs text-red-400 mb-1">ANTES</div>
+                            <div class="text-lg font-bold text-red-400">Lento</div>
+                            <div class="text-xs text-theme-secondary">Errores frecuentes</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-xs text-accent mb-1">DESPUES</div>
+                            <div class="text-lg font-bold text-accent">73%</div>
+                            <div class="text-xs text-theme-secondary">Mas rapido</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2 pt-4 border-t border-white/10">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-theme-secondary">Facturas procesadas:</span>
+                            <span class="font-semibold text-accent-secondary">9.5M/mes</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-theme-secondary">Reduccion errores:</span>
+                            <span class="font-semibold text-accent-secondary">92%</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-theme-secondary">Satisfaccion cliente:</span>
+                            <span class="font-semibold text-green-400">+15%</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-xs text-theme-secondary opacity-70">
+                        Tech: Python, SQL Server, SFTP, Sistema DANA
+                    </div>
+                </div>
+
+                <!-- Case 3: Falabella -->
+                <div class="card-dark p-8 rounded-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 px-3 py-1 text-xs font-medium rounded-bl-lg" style="background: var(--accent-primary);">
+                        8 años en produccion
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-xl flex items-center justify-center text-white font-bold" style="background: linear-gradient(135deg, #15803d 0%, #22c55e 100%);">F</div>
+                        <div>
+                            <div class="text-sm font-semibold text-accent">Corredores de Seguros Falabella</div>
+                            <div class="text-xs text-theme-secondary">Sector Seguros</div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-theme-primary">Sistema de Reporteria y Alta Disponibilidad</h3>
+                    <p class="text-sm mb-4 text-theme-secondary">Automatizacion de reportes operativos y comerciales con Oracle PL/SQL. Solucion de continuidad operativa para sistemas core.</p>
+
+                    <!-- Antes/Después mini -->
+                    <div class="grid grid-cols-2 gap-3 mb-4 p-3 rounded-lg" style="background: rgba(0,0,0,0.2);">
+                        <div class="text-center">
+                            <div class="text-xs text-red-400 mb-1">ANTES</div>
+                            <div class="text-lg font-bold text-red-400">60%</div>
+                            <div class="text-xs text-theme-secondary">Carga operativa</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-xs text-accent mb-1">DESPUES</div>
+                            <div class="text-lg font-bold text-accent">99.8%</div>
+                            <div class="text-xs text-theme-secondary">Disponibilidad</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2 pt-4 border-t border-white/10">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-theme-secondary">Carga operativa reducida:</span>
+                            <span class="font-semibold text-accent-secondary">60%</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-theme-secondary">Calidad de datos:</span>
+                            <span class="font-semibold text-accent-secondary">+75%</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-theme-secondary">Tiempo pase a prod:</span>
+                            <span class="font-semibold text-green-400">-40%</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-xs text-theme-secondary opacity-70">
+                        Tech: Oracle PL/SQL, UiPath, ETL, Shell Scripting
+                    </div>
+                </div>
+
+                <!-- Case 4: CONTATECH -->
+                <div class="card-dark p-8 rounded-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 px-3 py-1 text-xs font-medium rounded-bl-lg" style="background: var(--accent-primary);">
+                        Consultoria
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-xl flex items-center justify-center text-white font-bold" style="background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);">C</div>
+                        <div>
+                            <div class="text-sm font-semibold text-accent">CONTATECH S.A.C</div>
+                            <div class="text-xs text-theme-secondary">Sector Contable/Tributario</div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-theme-primary">Web Scraping Tributario Automatizado</h3>
+                    <p class="text-sm mb-4 text-theme-secondary">Sistema automatico de extraccion desde SUNAT y SUNAFIL para monitoreo tributario y laboral de empresas clientes.</p>
+
+                    <!-- Antes/Después mini -->
+                    <div class="grid grid-cols-2 gap-3 mb-4 p-3 rounded-lg" style="background: rgba(0,0,0,0.2);">
+                        <div class="text-center">
+                            <div class="text-xs text-red-400 mb-1">ANTES</div>
+                            <div class="text-lg font-bold text-red-400">Manual</div>
+                            <div class="text-xs text-theme-secondary">Revision diaria</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-xs text-accent mb-1">DESPUES</div>
+                            <div class="text-lg font-bold text-accent">24/7</div>
+                            <div class="text-xs text-theme-secondary">100% automatico</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2 pt-4 border-t border-white/10">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-theme-secondary">Intervencion manual:</span>
+                            <span class="font-semibold text-accent-secondary">0%</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-theme-secondary">Alertas:</span>
+                            <span class="font-semibold text-accent-secondary">Tiempo real</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-theme-secondary">Horas/semana ahorradas:</span>
+                            <span class="font-semibold text-green-400">~20 hrs</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-xs text-theme-secondary opacity-70">
+                        Tech: Python, Selenium, BeautifulSoup, AWS
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROI Callout -->
+            <div class="mt-12 card-dark p-6 rounded-2xl text-center" style="border: 1px solid var(--accent-primary);">
+                <div class="text-sm text-accent mb-2">RETORNO DE INVERSION TIPICO</div>
+                <div class="text-3xl font-bold text-theme-primary mb-2">ROI positivo en <span class="gradient-text">1-3 meses</span></div>
+                <p class="text-theme-secondary text-sm">Basado en reduccion de horas-hombre, eliminacion de errores y liberacion de personal para tareas estrategicas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-theme-primary">Stack Tecnológico</h2>
+                <p class="text-lg text-theme-secondary">Herramientas que domino para resolver tus problemas</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+                <div class="card-dark p-4 rounded-xl text-center hover:glow-accent transition-all">
+                    <div class="text-2xl mb-2">🐍</div>
+                    <div class="text-sm font-medium text-theme-primary">Python</div>
+                </div>
+                <div class="card-dark p-4 rounded-xl text-center hover:glow-accent transition-all">
+                    <div class="text-2xl mb-2">🗄️</div>
+                    <div class="text-sm font-medium text-theme-primary">Oracle</div>
+                </div>
+                <div class="card-dark p-4 rounded-xl text-center hover:glow-accent transition-all">
+                    <div class="text-2xl mb-2">📊</div>
+                    <div class="text-sm font-medium text-theme-primary">SQL Server</div>
+                </div>
+                <div class="card-dark p-4 rounded-xl text-center hover:glow-accent transition-all">
+                    <div class="text-2xl mb-2">🤖</div>
+                    <div class="text-sm font-medium text-theme-primary">UiPath</div>
+                </div>
+                <div class="card-dark p-4 rounded-xl text-center hover:glow-accent transition-all">
+                    <div class="text-2xl mb-2">📈</div>
+                    <div class="text-sm font-medium text-theme-primary">Power BI</div>
+                </div>
+                <div class="card-dark p-4 rounded-xl text-center hover:glow-accent transition-all">
+                    <div class="text-2xl mb-2">☁️</div>
+                    <div class="text-sm font-medium text-theme-primary">AWS</div>
+                </div>
+                <div class="card-dark p-4 rounded-xl text-center hover:glow-accent transition-all">
+                    <div class="text-2xl mb-2">🌐</div>
+                    <div class="text-sm font-medium text-theme-primary">Selenium</div>
+                </div>
+                <div class="card-dark p-4 rounded-xl text-center hover:glow-accent transition-all">
+                    <div class="text-2xl mb-2">⚡</div>
+                    <div class="text-sm font-medium text-theme-primary">ETL/SSIS</div>
+                </div>
+                <div class="card-dark p-4 rounded-xl text-center hover:glow-accent transition-all">
+                    <div class="text-2xl mb-2">🔗</div>
+                    <div class="text-sm font-medium text-theme-primary">APIs REST</div>
+                </div>
+                <div class="card-dark p-4 rounded-xl text-center hover:glow-accent transition-all">
+                    <div class="text-2xl mb-2">📋</div>
+                    <div class="text-sm font-medium text-theme-primary">Excel VBA</div>
+                </div>
+                <div class="card-dark p-4 rounded-xl text-center hover:glow-accent transition-all">
+                    <div class="text-2xl mb-2">🐳</div>
+                    <div class="text-sm font-medium text-theme-primary">Docker</div>
+                </div>
+                <div class="card-dark p-4 rounded-xl text-center hover:glow-accent transition-all">
+                    <div class="text-2xl mb-2">🐧</div>
+                    <div class="text-sm font-medium text-theme-primary">Linux</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="py-20 px-4" style="background: var(--bg-secondary);">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <!-- Photo -->
+                <div class="flex-shrink-0">
+                    <img src="assets/img/fernando-figueroa.png"
+                         alt="Fernando Figueroa Reynoso - Especialista en Automatizacion"
+                         class="w-48 h-48 rounded-2xl object-cover shadow-lg glow-accent"
+                         loading="lazy">
+                </div>
+
+                <div>
+                    <h2 class="text-3xl font-bold mb-4 text-theme-primary">Fernando Figueroa Reynoso</h2>
+                    <p class="font-medium mb-4 text-accent-secondary">Analista Programador Senior | Especialista en Automatización</p>
+                    <p class="mb-6 text-theme-secondary">
+                        Con más de 26 años de experiencia en TI empresarial, me especializo en transformar procesos manuales en sistemas automatizados que generan resultados medibles. He trabajado con empresas líderes como Telefónica, Falabella e INDRA, implementando soluciones que procesan millones de transacciones y reducen tiempos de operación hasta en un 96%.
+                    </p>
+                    <p class="mb-6 text-theme-secondary">
+                        Mi enfoque no es solo automatizar tareas aisladas, sino diseñar arquitecturas completas que optimizan recursos, escalan con tu negocio y liberan a tu equipo para que se enfoque en lo que realmente importa.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://www.linkedin.com/in/fernandofigueroareynoso" target="_blank" class="flex items-center gap-2 text-theme-secondary hover:text-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="mailto:ffigueroa58@gmail.com" class="flex items-center gap-2 text-theme-secondary hover:text-accent transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            ffigueroa58@gmail.com
+                        </a>
+                        <span class="flex items-center gap-2 text-theme-secondary">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            Lima, Perú
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="card-dark p-8 md:p-12 rounded-2xl text-center relative">
+                <div class="text-6xl mb-6 opacity-20" style="color: var(--accent-primary);">"</div>
+                <blockquote class="text-xl md:text-2xl mb-6 text-theme-primary font-medium leading-relaxed">
+                    Pense que automatizar nuestro proceso de reportes tomaria meses. En 3 semanas ya estaba funcionando y ahorramos 15 horas semanales. El ROI se vio en el primer mes.
+                </blockquote>
+                <div class="flex items-center justify-center gap-4">
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold" style="background: var(--accent-primary);">JR</div>
+                    <div class="text-left">
+                        <div class="font-semibold text-theme-primary">Jefe de Operaciones</div>
+                        <div class="text-sm text-theme-secondary">Empresa del sector contable - Lima</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 px-4" style="background: var(--bg-secondary);">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-theme-primary">¿Cuanto tiempo pierde tu equipo cada semana?</h2>
+            <p class="text-lg mb-8 text-theme-secondary">
+                Agenda una consulta gratuita de 15 minutos. Analizamos tu proceso y te digo si puedo ayudarte (y cuanto).
+            </p>
+
+            <a href="https://wa.me/51939922418?text=Hola%20Fernando,%20quiero%20agendar%20mi%20consulta%20gratuita%20de%2015%20minutos%20para%20evaluar%20un%20proceso."
+               target="_blank"
+               class="inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-10 py-5 rounded-2xl font-semibold text-xl transition-all hover:scale-105 hover:shadow-lg hover:shadow-green-500/25">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Agendar consulta gratuita (15 min)
+            </a>
+
+            <p class="text-sm mt-4 text-theme-secondary opacity-70">
+                Sin compromiso - Respuesta en menos de 24 horas
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 border-t" style="border-color: rgba(255,255,255,0.1);">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-sm text-theme-secondary">
+                © 2025 Fernando Figueroa Reynoso. Todos los derechos reservados.
+            </div>
+            <div class="flex gap-6">
+                <a href="https://www.linkedin.com/in/fernandofigueroareynoso" target="_blank" class="text-theme-secondary hover:text-accent transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="mailto:ffigueroa58@gmail.com" class="text-theme-secondary hover:text-accent transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </a>
+                <a href="https://wa.me/51939922418" target="_blank" class="text-theme-secondary hover:text-green-500 transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/51939922418?text=Hola%20Fernando,%20vi%20tu%20página%20y%20me%20interesa%20automatizar%20un%20proceso%20en%20mi%20empresa.%20¿Podemos%20conversar?"
+       target="_blank"
+       class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg shadow-green-500/30 transition-all hover:scale-110 group">
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="absolute right-full mr-3 top-1/2 -translate-y-1/2 text-white text-sm px-3 py-2 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity card-dark">
+            ¿Hablamos?
+        </span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
